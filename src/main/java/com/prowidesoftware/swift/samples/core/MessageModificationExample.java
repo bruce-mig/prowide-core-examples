@@ -81,7 +81,8 @@ public class MessageModificationExample {
          */
         Field57A field57A = new Field57A();
         field57A.setAccount("12345");
-        field57A.setBIC("NEWAESMMXXX");
+//        field57A.setBIC("NEWAESMMXXX");
+        field57A.setIdentifierCode("NEWAESMMXXX");
         b4.getTagByName("57A").setValue(field57A.getValue());
 
         /*

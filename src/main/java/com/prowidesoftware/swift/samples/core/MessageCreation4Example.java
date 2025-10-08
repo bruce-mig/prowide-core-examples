@@ -73,7 +73,7 @@ public class MessageCreation4Example {
     m.addField(new Field20("REFERENCE1"));
     m.addField(new Field32B().setCurrency(Currency.getInstance("USD"))
         .setAmount(new BigDecimal("3000.00")));
-    m.addField(new Field57A().setBIC("ABCDUSXXXXX"));
+    m.addField(new Field57A().setIdentifierCode("ABCDUSXXXXX"));
 
     /*
      * Add another instance of repetitive sequence B
@@ -81,7 +81,7 @@ public class MessageCreation4Example {
     m.addField(new Field20("REFERENCE2"));
     m.addField(new Field32B().setCurrency(Currency.getInstance("USD"))
         .setAmount(new BigDecimal("7000.00")));
-    m.addField(new Field57A().setBIC("EFGHUSXXXXX").setAccount("1234567890"));
+    m.addField(new Field57A().setIdentifierCode("EFGHUSXXXXX").setAccount("1234567890"));
 
     /*
      * As an alternative you could also create the sequences as SwiftTagListBlock and then use

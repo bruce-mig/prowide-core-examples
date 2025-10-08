@@ -98,7 +98,8 @@ public class MessageCreation3Example {
          */
         Field50A f50A = new Field50A()
                 .setAccount("12345678901234567890")
-                .setBIC("FOOBANKXXXXX");
+//                .setBIC("FOOBANKXXXXX");
+                .setIdentifierCode("FOOBANKXXXXX");
         m.addField(f50A);
 
         /*
