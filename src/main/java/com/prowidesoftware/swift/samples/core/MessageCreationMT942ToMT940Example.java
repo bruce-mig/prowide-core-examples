@@ -179,10 +179,10 @@ public class MessageCreationMT942ToMT940Example {
          * RC: Reversal of Credit
          * RD: Reversal of Debit
          */
-        if ("D".equals(field61.getDCMark()) || "RC".equals(field61.getDCMark())) {
-          balance = balance.subtract((BigDecimal) field61.getAmountAsNumber());
+        if ("D".equals(field61.getDebitCreditMark()) || "RC".equals(field61.getDebitCreditMark())) {
+          balance = balance.subtract((BigDecimal) field61.getAmountAsBigDecimal());
         } else {
-          balance = balance.add((BigDecimal) field61.getAmountAsNumber());
+          balance = balance.add((BigDecimal) field61.getAmountAsBigDecimal());
         }
       }
     }
